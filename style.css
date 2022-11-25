@@ -1,0 +1,145 @@
+body{
+    background-color: var(--radio-color);
+  }
+
+
+  .edit{
+    float: right;
+    border: 2px solid transparent;
+    color: white;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 4px;
+  }
+  .form-control{
+    background-color: transparent;
+    border: none;
+  }
+  .del{
+    margin-right: 10px;
+  }
+
+  
+  /* feild set */
+  fieldset{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  input[type = "radio"]{
+    appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid;
+    border-radius: 50%;
+  }
+  input[type = "radio"]:checked{
+    background-color: var(--radio-color);
+  }
+  .input{
+    background-color: rgb(250, 239, 239);
+    border: 1px solid #2a242430;
+  }
+
+  /* feildset class selector */
+  .select_Color{
+    border: none;
+  }
+  /* changes for particular themes */
+  #light{
+    --radio-color:rgb(205,183,187);
+  }
+
+  #dark{
+    --radio-color:rgb(32,42,68);
+  }
+
+  #BabyPink{
+    --radio-color:rgb(242,172,185);
+  }
+
+  #grey{
+    --radio-color:rgb(39, 38, 39);
+  }
+  
+  :root:has(#light:checked)
+  {
+    background-color: #edf2f7;
+  }
+  :root:has(#dark:checked)
+  {
+    background-color: #1a1d1d;
+  }
+  :root:has(#BabyPink:checked)
+  {
+  background-color: #fd93e5;
+  }
+  :root:has(#grey:checked)
+  {
+  background-color: rgb(108, 108, 108);
+  }
+
+  :root:has(#orange:checked)
+  {
+  background-color: orange;
+  }
+
+  /* second row */
+  .second_row{
+    border: 5px solid rgb(165, 237, 157);
+    width: 70%;
+    margin: 0px auto;
+    
+  }
+
+  /* image result */
+
+  .image-div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+  }
+
+  /* seach boxes and all */
+  .frist_row{
+    text-align: center;
+    border: 6px solid rgb(169, 235, 211);
+    padding: 28px 20px;
+    border-radius: 2px;
+    margin-bottom: 17px;
+    width: 70%;
+    margin: 33px auto;
+  }
+
+  input{
+    width: 180px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 30px;
+  }
+
+  h1{
+    color: rgb(10, 10, 10);
+  }
+
+  button{
+    width: 74px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+  }
+
+  button:hover{
+    cursor: pointer;
+  }
+
+  /* row one end  */
+
+  legend{
+    font-size: 19px;
+    font-weight: 600;
+  }

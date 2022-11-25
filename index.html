@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebMovieApi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- frist div -->
+        <!-- search box for movie -->
+        <div class="frist_row">
+            <!-- heading 1 -->
+
+            <h1>SEARCH YOUR FAV MOVIE</h1>
+
+            <!-- input box -->
+            <input type="text" name="" id="search">
+
+            <!-- serch butoon  -->
+            <button onclick = "loaddoc()">search</button>
+        </div>
+        
+        <!-- form for theme selector -->
+
+        <form class="form-control control">
+            <!-- feild set  -->
+            <fieldset class="select_Color">
+                <!-- theme selector -->
+              <legend>Choose your fav Theme</legend>
+
+              <!-- frist light -->
+              <label for="light">Light</label>
+              <input type="radio" name="theme" id="light" checked>
+
+              <!-- dark  -->
+              <label for="dark">dark</label>
+              <input type="radio" name="theme" id="dark">
+
+              <!-- baby pink  -->
+              <label for="BabyPink">BabyPink</label>
+              <input type="radio" name="theme" id="BabyPink">
+
+              <!-- grey theme -->
+              <label for="grey">grey</label>
+              <input type="radio" name="theme" id="grey">
+
+              <!-- orange theme -->
+              <label for="orange">orange</label>
+              <input type="radio" name="theme" id="orange">
+                <!-- end feild set -->
+            </fieldset>
+
+            <!-- feild set end -->
+        </form>
+        <!-- end of form selector -->
+
+
+        <!-- div for image result  -->
+        <div class="second_row">
+
+            <!-- result image -->
+            <div class="image-div"></div>
+            <!-- result end -->
+        </div>
+        <!-- end div result -->
+
+    </div>
+
+    <!-- adding javasrcipt -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
